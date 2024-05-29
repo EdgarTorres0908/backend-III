@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2; 
+    color: #333; 
+}
+
+.appglass {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.header {
+    width: 100%;
+    background-color: #007bff; 
+    color: white;
+    padding: 1rem 0;
+}
+
+main {
+    width: 100%;
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    width: calc(33.333% - 2rem);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.card h2 {
+    color: #007bff; 
+}
+
+.card p {
+    margin: 0.5rem 0;
+}
+
+.formContainer {
+    margin-top: 2rem;
+    text-align: left;
+}
+
+.prodForm {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+input {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    background-color: #007bff; 
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #043a74; 
+}
+
+/* Estilo para la navegación */
+.ulnav {
+    list-style-type: none; /* Quita los puntos de la lista */
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Centra los elementos horizontalmente */
+    background-color: #007bff; /* Fondo azul */
+}
+
+.ulnav li {
+    margin: 0 1rem; /* Espaciado entre los elementos */
+}
+
+.ulnav li a {
+    display: block;
+    padding: 1rem;
+    text-decoration: none;
+    color: white; /* Texto blanco */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.ulnav li a:hover {
+    background-color: #0056b3; /* Fondo azul más oscuro en hover */
+    color: #f2f2f2; /* Color de texto gris claro en hover */
+}

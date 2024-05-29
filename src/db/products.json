@@ -1,1 +1,42 @@
-[{"id":"6b887d61-44bf-4bb4-aed8-71025019ecf5","status":true,"title":"medicina","description":"acetaminofen","code":"Actf01","price":10,"stock":20,"category":"Analgesico"}]
+[
+	{
+		"id": "f3afaa87-ef8f-43e8-a181-d7d401635895",
+		"status": true,
+		"title": "Acetaminofen 10mg",
+		"description": "utilizado principalmente para tratar la fiebre y el dolor leve y moderado",
+		"category": "analgésico",
+		"code": "ace10anti",
+		"price": 1890,
+		"stock": 35
+	},
+	{
+		"id": "d77b601c-6128-494e-919c-588c2df1bb7d",
+		"status": true,
+		"title": "desloratadina 5mg",
+		"description": "actúa reduciendo los síntomas de la alergia o rinitis alérgica, como picazón en la nariz, estornudos, congestión nasal o lagrimeo",
+		"category": "antialergico",
+		"code": "des5anti",
+		"price": 1560,
+		"stock": 15
+	},
+	{
+		"id": "44f2679e-80bc-4827-945a-9619146844ce",
+		"status": true,
+		"title": "gggg",
+		"description": "gfg",
+		"category": "jyjyy",
+		"code": "ttey",
+		"price": 3424,
+		"stock": 12
+	},
+	{
+		"id": "a11621fc-eb39-4f65-8397-f7cc7dd7ee9f",
+		"status": true,
+		"title": "amoxicilina 500mg",
+		"description": "utilizado para el tratamiento de infecciones bacterianas de las vías respiratorias o como parte del esquema de antibióticos contra la bacteria H.pylori.",
+		"category": "antibiotico",
+		"code": "amox500anti",
+		"price": 3500,
+		"stock": 55
+	}
+]

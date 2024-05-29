@@ -2,7 +2,7 @@ import { __dirname } from "../path.js";
 import fs from "fs";
 import { v4 as uuidv4 } from "uuid";
 
-import ProductManager from "./product.manager.js";
+import ProductManager from "./products.manager.js";
 const productManager = new ProductManager(`${__dirname}/db/products.json`);
 
 export default class CartManager {
@@ -57,7 +57,6 @@ export default class CartManager {
       let carts = await this.getAllCarts();
       const cartExist = await this.getCartById(idCart);
       if(!cartExist) throw new Error('Cart not found');
-      // console.log(cartExist);
       const existProdInCart = cartExist.products.find((prod) => prod.product === idProduct);
       if(!existProdInCart){
         const prod = {

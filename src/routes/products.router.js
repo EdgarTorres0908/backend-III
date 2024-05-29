@@ -3,16 +3,14 @@ const router = Router();
 
 import { __dirname } from "../path.js";
 
-import ProductManager from "../managers/product.manager.js";
+import ProductManager from "../managers/products.manager.js";
 const productManager = new ProductManager(`${__dirname}/db/products.json`);
 
 import {productValidator} from '../middlewares/productValidator.js'
 
 router.get('/', async(req, res) => {
     try {
-        const { limit } = req.query;
-        console.log(limit);
-        const products = await productManager.getProducts(limit);
+        const products = await productManager.getProducts();
         res.status(200).json(products);
     } catch (error) {
         res.status(404).json({ message: error.message });
