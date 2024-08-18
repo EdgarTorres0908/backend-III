@@ -8,4 +8,4 @@ const TicketSchema = Schema({
     purchaserId: {type: Schema.Types.ObjectId, ref:"user", required:true}
 })
 
-export const TicketModel= model('tickets', TicketSchema)
+export const TicketModel= model('tickets', TicketSchema)

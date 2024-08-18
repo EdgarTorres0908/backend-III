@@ -90,7 +90,7 @@ export const addProductToCart = async (req, res, next) => {
         pid,
         quantity
       );
-      if (!updateProdQuantity) res.json({ msg: "cannot update product quantity " });
+      if (!updateProdQuantity) res.json({ msg: "no se pudo actualizar la cantidad de productos " });
       else res.json(updateProdQuantity);
     } catch (error) {
       next(error.message);
@@ -101,7 +101,7 @@ export const addProductToCart = async (req, res, next) => {
     try {
       const { cid } = req.params;
       const clearCart = await service.clearCart(cid);
-      if (!clearCart) res.json({ msg: "cannot clear this cart " });
+      if (!clearCart) res.json({ msg: "no se pudo limpiar el carro " });
       else res.json(clearCart);
     } catch (error) {
       next(error.message);
@@ -140,7 +140,7 @@ export const addProductToCart = async (req, res, next) => {
                     productsOutOfStock.push(product);
                 }
             } catch (error) {
-                console.error(`Error processing product ${product.product}:`, error);
+                console.error(`Error al procesar el producto ${product.product}:`, error);
                 productsOutOfStock.push(product);
             }
         }

@@ -53,10 +53,10 @@ export default class CartManager {
   async saveProductToCart(idCart, idProduct) {
     try {
       const prodExist = await productManager.getProductById(idProduct);
-      if(!prodExist) throw new Error('Product not found');
+      if(!prodExist) throw new Error('Producto no encontrado');
       let carts = await this.getAllCarts();
       const cartExist = await this.getCartById(idCart);
-      if(!cartExist) throw new Error('Cart not found');
+      if(!cartExist) throw new Error('Carro no encontrado');
       const existProdInCart = cartExist.products.find((prod) => prod.product === idProduct);
       if(!existProdInCart){
         const prod = {

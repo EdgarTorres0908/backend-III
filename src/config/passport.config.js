@@ -46,6 +46,8 @@ const initializePassport = () => {
     }
   });
 
+  console.log("JWT Secret:", process.env.JWT_SECRET);
+
   passport.use(
     "jwt",
     new JWTStrategy(
