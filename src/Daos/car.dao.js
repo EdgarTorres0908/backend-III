@@ -55,6 +55,7 @@ export default class CartDao {
       throw new Error(error);
     }
   }
+
   async addProductToCart(cartId, productId) {
     try {
       const prodInCart = await this.isInCart(cartId, productId);
@@ -75,6 +76,7 @@ export default class CartDao {
       console.log(error);
     }
   }
+
   async removefromCart(cartId, productId) {
     try {
       return await CartModel.findByIdAndUpdate(
@@ -86,6 +88,8 @@ export default class CartDao {
       console.log(error);
     }
   }
+
+  
   async updateProdQuantity(cartId, productId, quantity) {
     try {
       return await CartModel.findOneAndUpdate(

@@ -1,12 +1,13 @@
-import mongoose from 'mongoose'; 
+import mongoose from 'mongoose';
+import 'dotenv/config';
 
-const connectionString = "mongodb+srv://admin:357159edgar@torresp.atj84jw.mongodb.net/"
+const connectionString = process.env.MONGO_URL || 'mongodb://localhost:27017/ecommerce';
 
 export const initMongoDB = async() => {
     try {
       await mongoose.connect(connectionString);
-      console.log('Conectado a base de datos de MongoDB'); 
+      console.log('Conectado a la base de datos de MongoDB');
     } catch (error) {
-      console.log(`ERROR => ${error}`); 
-    }
-}
+      console.log(`ERROR => ${error}`);
+    }
+  }

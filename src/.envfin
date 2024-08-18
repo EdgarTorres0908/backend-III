@@ -1,0 +1,8 @@
+MONGO_URL= "mongodb+srv://admin:357159edgar@torresp.atj84jw.mongodb.net/"
+PERSISTENSE = "MONGO"
+
+JWT_SECRET='merenguetengue'
+MAILER_HOST='smtp.gmail.com'
+MAILER_PORT=587
+MAILER_USERNAME=
+MAILER_PASSWORD=
