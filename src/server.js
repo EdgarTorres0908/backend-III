@@ -13,6 +13,7 @@ import { errorHandler } from "./middlewares/errorHandler.js";
 import {initializePassport} from "./config/passport.config.js";
 
 
+import mocksRouter from './routes/mocks.router.js';
 import viewsRouter from './routes/views.routes.js';
 import cartRouter from './routes/carts.routes.js';
 import productsRouter from './routes/products.routes.js';
@@ -36,6 +37,7 @@ initializePassport();
 app.use(passport.initialize());
 
 
+app.use('/api/mocks', mocksRouter);
 app.use('/api/carts', cartRouter);
 app.use('/api/products', productsRouter);
 app.use("/api/auth", authRouter);
