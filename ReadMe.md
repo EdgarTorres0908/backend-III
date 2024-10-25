@@ -1,0 +1,1 @@
+Puedes encontrar la imagen de Docker: https://hub.docker.com/repository/docker/edgartorres0908/farmaciaimg/general 
