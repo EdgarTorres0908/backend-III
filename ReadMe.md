@@ -1,1 +1,1 @@
-Puedes encontrar la imagen de Docker: https://hub.docker.com/repository/docker/edgartorres0908/farmaciaimg/general 
+Puedes encontrar la imagen de Docker: https://hub.docker.com/layers/edgartorres0908/nombre_de_tu_imagen/tag/images/sha256:1ed9e8e888b1eff1ab0b07542671f88180414f85520ac39ef14413fdfe32d852?uuid=E9A92DC6-29CB-4710-80F3-B8A04BC07CE6
